@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Image</title>
+    <link rel="stylesheet" href="lopyu.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; 
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+            object-fit: cover; 
+            opacity: 0.5; 
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            z-index: 1; 
+        }
+        .figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 50px;
+            z-index: 1;
+        }
+        .circle img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover; 
+        }
+        .rectangle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 40px;
+            background-color: lightgray;
+            margin-top: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        .or {
+            font-size: 24px;
+            margin: 0 50px;
+            z-index: 1;
+            color: rgb(0, 0, 0);
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            z-index: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <video autoplay loop muted class="background-video">
+        <source src="bg2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <a href="http://127.0.0.1:3000/bg.html" class="back-button">Kembali</a>
+    <div class="container">
+        <div class="figure">
+            <div class="circle">
+                <img src="frank ocean.jpg" alt="Image 1">
+            </div>
+            <a href="https://www.instagram.com/notworldthemention/?hl=en" class="rectangle" style="background-color: rgb(13, 124, 119); color: rgb(255, 255, 255);">soker acc</a>
+        </div>
+        <div class="or">OR</div>
+        <div class="figure">
+            <div class="circle">
+                <img src="aski.jpg" alt="Image 2">
+            </div>
+            <a href="https://www.instagram.com/theselfishways/?hl=en" class="rectangle" style="background-color: rgb(13, 124, 119); color: rgb(255, 255, 255);">dump acc</a>
+        </div>
+    </div>
+</body>
+</html>
